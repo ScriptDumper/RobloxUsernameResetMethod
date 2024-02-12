@@ -12,7 +12,7 @@ url = "/v1/usernames/validate?request.username=KKLUX&request.birthday=1337-04-20
 conn = http.client.HTTPSConnection("auth.roblox.com")
 
 # 디스코드 웹훅 URL
-webhook_url = "https://discord.com/api/webhooks/1193400866854686862/2Ffrz5tdnuEFuEsHbrcw52KFt2z_4DtS-kSKWvp4S2C1MwuFRBkim6keJub_mpFFOKAu"
+webhook_url = os.environ.get('webhook')
 
 while True:
     # 요청 보내기
