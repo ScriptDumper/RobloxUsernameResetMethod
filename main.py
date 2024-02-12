@@ -2,6 +2,9 @@ import http.client
 import json
 import requests
 
+from keep_alive import keep_alive
+keep_alive()
+
 # URL 및 매개변수 설정
 url = "/v1/usernames/validate?request.username=KKLUX&request.birthday=1337-04-20"
 
